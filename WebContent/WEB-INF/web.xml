@@ -19,4 +19,14 @@
     <servlet-name>HttpServlet</servlet-name>
     <url-pattern>/hello</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RequestDemo</display-name>
+    <servlet-name>RequestDemo</servlet-name>
+    <servlet-class>cn.servlet.RequestDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequestDemo</servlet-name>
+    <url-pattern>/RequestDemo</url-pattern>
+  </servlet-mapping>
 </web-app>
