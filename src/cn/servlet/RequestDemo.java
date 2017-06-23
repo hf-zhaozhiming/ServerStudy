@@ -39,6 +39,7 @@ public class RequestDemo extends HttpServlet {
 
 	private void getHeader(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		response.getWriter().append("请求主机host：").append(request.getHeader("host") + "<br/>");// 根据名称获取头值
+		response.getWriter().append("请求来源referer为：").append(request.getHeader("referer") + "<br/>");// 获取访问该网页的来源
 		Enumeration<String> headerNames = request.getHeaderNames();
 		while (headerNames.hasMoreElements()) {
 			String header = headerNames.nextElement();
