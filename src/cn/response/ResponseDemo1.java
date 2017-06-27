@@ -31,7 +31,7 @@ public class ResponseDemo1 extends HttpServlet {
 		// response.getWriter().append("字符流输出 test!");
 
 		// 使用字节流输出
-		response.setCharacterEncoding("utf-8");
+		response.setCharacterEncoding("utf-8");// 浏览器不会自动适应字符编码
 		response.getOutputStream().write("字节流输出 test".getBytes());
 	}
 
